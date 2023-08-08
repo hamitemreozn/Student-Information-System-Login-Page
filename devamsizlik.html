@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style/devamsizlik.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bxs-dashboard icon'></i>
+            <div class="logo_name">Öğrenci Bilişim Sistemi</div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <!-- <li>
+                <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li> -->
+            <li>
+                <a href="profil.html" class="">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">Profil</span>
+                </a>
+                <span class="tooltip">Profil</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-chat'></i>
+                    <span class="links_name">Mesaj</span>
+                </a>
+                <span class="tooltip">Mesaj</span>
+            </li>
+            <li>
+                <a href="sidebar.html" class="">
+                    <i class='bx bx-pie-chart-alt-2'></i>
+                    <span class="links_name">Notlarım</span>
+                </a>
+                <span class="tooltip">Notlarım</span>
+            </li>
+            <li>
+                <a href="devamsizlik.html" class="active">
+                    <i class='bx bx-time'></i>
+                    <span class="links_name">Devamsızlık</span>
+                </a>
+                <span class="tooltip">Devamsızlık</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-folder'></i>
+                    <span class="links_name">Ders Materyalleri</span>
+                </a>
+                <span class="tooltip">Ders Materyalleri</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-utensils"></i>
+                    <span class="links_name">Yemek Listesi</span>
+                </a>
+                <span class="tooltip">Yemek Listesi</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-calendar'></i>
+                    <span class="links_name">Ders Programı</span>
+                </a>
+                <span class="tooltip">Ders Programı</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="links_name">Ayarlar</span>
+                </a>
+                <span class="tooltip">Ayarlar</span>
+            </li>
+            <li class="profile">
+                <div class="profile-details">
+                    <img src="img/profile.jpg" alt="profileImg">
+                    <div class="name_job">
+                        <div class="name">HAMİT EMRE ÖZEN</div>
+                        <div class="job">Öğrenci</div>
+                    </div>
+                </div>
+                <a href="index.html"><i class='bx bx-log-out' id="log_out"></i></a>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <!-- <div class="text"></div> -->
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="jumbotron">
+                        <div class="row">
+                            <div class="col-md-2 bg-transparent">
+                                <img src="img/profile.jpg" class="card-img">
+                                <button class="btn btn-block btn-sm btn-info mt-lg-1 btneditfoto"><i class='bx bx-edit-alt'></i><span>Düzenle</span></button>
+                            </div>
+                            <div class="col-md-10 bg-info d-flex flex-column pl-3">
+                                <h5>HAMİT EMRE ÖZEN</h5>
+                                <div>BİLGİSAYAR MÜHENDİSLİĞİ</div>
+                                <h6>MÜHENDİSLİK FAKÜLTESİ</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="container">
+            <div class="row profilheader">
+                <!-- <div class="col">
+                    <div class="user-jumbotron d-flex">
+                        <figure class="figure text-center">
+                            <img src="img/profile.jpg" alt="" class="img-thumbnail img-fluid">
+                            <a href="#" role="button" class="btn btn-light position-relative btn-block">
+                                <i aria-hidden="true" class="fas fa-pencil-alt fa-sm"></i>
+                                <span class="pl-1">Düzenle</span>
+                            </a>
+                        </figure>
+                        <div class="d-flex flex-column pl-3">
+                            <h5>HAMİT EMRE ÖZEN</h5>
+                            <div>BİLGİSAYAR MÜHENDİSLİĞİ</div>
+                            <h6>MÜHENDİSLİK FAKÜLTESİ</h6>
+                            <span class="text-light">Öğrenci bilgileri aşağıda yer almaktadır.</span>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="yoklama-card-group">
+                <div class="yoklama-card">
+                    <div class="card-body">
+                        <div class="yoklama-row">
+                            <div class="yoklama-row-title">
+                                <i class="fa-solid fa-square-check devamsizlikhidden mr-2"></i> Devamsızlık Tarihi
+                            </div>
+                            <div class="yoklama-row-data">
+                                <i class="fa-solid fa-square-check mr-1 devamsizlikhidden"></i> devamsızlık türü <i class="fa-solid fa-square-check ml-2"></i><i class="fa-solid fa-square-xmark ml-2"></i>
+                            </div>
+                        </div>
+                        <div class="yoklama-row">
+                            <div class="yoklama-row-title">
+                                <i class='bx bx-log-out mr-2 devamsizlikhidden' id="log_out"></i> 11.04.2023
+                            </div>
+                            <div class="yoklama-row-data">
+                                <i class='fa-solid fa-square-check mr-1' id="log_out"></i> Nöbetçi yazıldınız.
+                            </div>
+                        </div>
+                        <div class="yoklama-row">
+                            <div class="yoklama-row-title">
+                                <i class='bx bx-log-out mr-2 devamsizlikhidden' id="log_out"></i> 11.04.2023
+                            </div>
+                            <div class="yoklama-row-data">
+                                <i class='fa-solid fa-square-xmark mr-1' id="log_out"></i> Yarım gün özürsüz devamsızlık yaptınız.
+                            </div>
+                        </div>
+                        <div class="yoklama-row">
+                            <div class="yoklama-row-title">
+                                <i class='bx bx-log-out mr-2 devamsizlikhidden' id="log_out"></i> 11.04.2023
+                            </div>
+                            <div class="yoklama-row-data">
+                                <i class='fa-solid fa-square-xmark mr-1' id="log_out"></i> Tam gün özürsüz devamsızlık yaptınız.
+                            </div>
+                        </div>
+                        <div class="yoklama-row">
+                            <div class="yoklama-row-title">
+                                <i class='bx bx-log-out mr-2 devamsizlikhidden' id="log_out"></i> 11.04.2023
+                            </div>
+                            <div class="yoklama-row-data">
+                                <i class='fa-solid fa-square-xmark mr-1' id="log_out"></i> Tam gün özürsüz devamsızlık yaptınız.
+                            </div>
+                        </div>
+                        <div class="yoklama-row-double">
+                            <div class="yoklama-column-double">
+                                <div class="yoklama-row-title">
+                                    <i class="fa-solid fa-square-check devamsizlikhidden mr-2"></i> Özürlü Devamsızlık Sayısı
+                                </div>
+                                <div class="yoklama-row-data">
+                                    <i class='fa-solid fa-square-check mr-1' id="log_out"></i> 1 gün özürlü devamsızlık
+                                </div>
+                            </div>
+                            <div class="yoklama-column-double yoklama-column-border">
+                                <div class="yoklama-row-title">
+                                    <i class="fa-solid fa-square-check devamsizlikhidden mr-2"></i> Özürsüz Devamsızlık Sayısı
+                                </div>
+                                <div class="yoklama-row-data">
+                                    <i class='fa-solid fa-square-xmark mr-1' id="log_out"></i> 2,5 gün özürsüz devamsızlık
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <script src="js/devamsizlik.js"></script>
+</body>
+
+</html>
